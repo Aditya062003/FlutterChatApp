@@ -34,7 +34,7 @@ class App extends StatelessWidget {
             return const SplashScreen();
           }
           if (snapshot.hasData) {
-            return const VerifyEmailScreen();
+            return const ChatScreen();
           }
           return const AuthScreen();
         },

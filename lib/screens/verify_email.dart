@@ -97,11 +97,12 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
                   ),
                   const SizedBox(height: 8),
                   TextButton(
-                      onPressed: () => FirebaseAuth.instance.signOut(),
-                      child: const Text(
-                        'Cancel',
-                        style: TextStyle(fontSize: 20),
-                      ))
+                    onPressed: () => FirebaseAuth.instance.signOut(),
+                    child: const Text(
+                      'Cancel',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ),
                 ],
               ),
             ),
