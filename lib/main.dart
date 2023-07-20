@@ -1,5 +1,4 @@
 import 'package:chat_app/screens/auth.dart';
-import 'package:chat_app/screens/chat.dart';
 import 'package:chat_app/screens/splash.dart';
 import 'package:chat_app/screens/verify_email.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -34,7 +33,7 @@ class App extends StatelessWidget {
             return const SplashScreen();
           }
           if (snapshot.hasData) {
-            return const ChatScreen();
+            return const VerifyEmailScreen();
           }
           return const AuthScreen();
         },
